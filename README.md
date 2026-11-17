@@ -1,8 +1,6 @@
 # plot-armor-sports-data
 
-This folder is what goes into the public GitHub repo `plot-armor-sports-data` once Selly
-creates it. Until then it lives here, and `npm run build-data` (in the extension repo) uses it
-to build the copy of the schedule bundled in the extension.
+The schedule for Plot Armor: Sports (a Chrome extension). Teams and start times only, never scores.
 
 - `build.mjs` downloads the schedule (2 days back, 7 ahead) and rosters for NFL, NBA, NHL,
   MLB, Premier League, Champions League and MLS, and writes `sports.json`: who plays whom,
@@ -23,9 +21,12 @@ refuses a file that suddenly lost most of the coming games.
 
 **Before any paid tier, switch to a licensed sports-data source.** Only `build.mjs` changes.
 
-## Setting it up (one time, when Selly says go)
+## Set up (done 2026-11-17)
 
-1. Create the public repo `plot-armor-sports-data` on GitHub and copy this folder into it.
-2. Settings → Pages → Source: "GitHub Actions".
-3. Actions → "Build schedule" → Run workflow. Check `https://ACCOUNT.github.io/plot-armor-sports-data/sports.json` opens.
-4. Put that address (without `sports.json`) in `SPORTS_DATA_URL` in `src/lib/sportsdata.ts`.
+- Public repo github.com/sellybros711/plot-armor-sports-data, Pages source "GitHub Actions".
+- Published at https://sellybros711.github.io/plot-armor-sports-data/sports.json.
+- Pushing from `~/Projects/plot-armor-sports-data` uses the token "Plot Armor Sports data"
+  (only this repo; Contents and Workflows read/write; expires about Nov 17, 2027), saved in the
+  Keychain for this repo only. When it expires, pushes fail with 403: make a new token the same
+  way, run `git push` once in that folder and paste it.
+- To rebuild by hand: the repo's Actions tab → "Build schedule" → Run workflow.
