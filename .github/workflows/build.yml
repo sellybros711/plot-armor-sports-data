@@ -8,6 +8,9 @@ on:
   schedule:
     # 10:00 and 20:00 UTC (early morning and mid-afternoon US Eastern).
     - cron: '0 10,20 * * *'
+  # And whenever the lists or the builder change.
+  push:
+    branches: [main]
   workflow_dispatch: {}
 
 permissions:
