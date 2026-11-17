@@ -1,0 +1,45 @@
+# Builds sports.json twice a day and publishes it with GitHub Pages.
+# Runs on GitHub's computers (free for public repos), so it works when nobody's Mac is on.
+# The extension only ever downloads the published sports.json; nothing about users comes here
+# except, like any web page, their IP address in GitHub's logs.
+name: Build schedule
+
+on:
+  schedule:
+    # 10:00 and 20:00 UTC (early morning and mid-afternoon US Eastern).
+    - cron: '0 10,20 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # The word list the builder uses to tell everyday words ("Bills", "Price") from names.
+      - run: sudo apt-get update && sudo apt-get install -y wamerican
+      - run: mkdir -p site && node build.mjs --out site/sports.json
+      - run: cp index.html site/ 2>/dev/null || true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
