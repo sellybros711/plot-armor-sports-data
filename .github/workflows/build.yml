@@ -33,7 +33,8 @@ jobs:
       # The word list the builder uses to tell everyday words ("Bills", "Price") from names.
       - run: sudo apt-get update && sudo apt-get install -y wamerican
       - run: mkdir -p site && node build.mjs --out site/sports.json
-      - run: cp index.html site/ 2>/dev/null || true
+      # The privacy policy the Chrome Web Store listing links to.
+      - run: cp privacy.html site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
