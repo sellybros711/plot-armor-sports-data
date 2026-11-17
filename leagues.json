@@ -13,18 +13,14 @@
         "NFLonCBS",
         "NFLonPrime",
         "NFLNetwork",
-        "nflnetwork",
         "SNFonNBC",
         "ESPNNFL",
-        "NFL_Memes",
         "NFLFantasy",
-        "NFLResearch",
         "NextGenStats",
         "RapSheet",
         "AdamSchefter",
         "TomPelissero",
-        "PFF",
-        "NFLRedZone"
+        "PFF"
       ],
       "hashtags": [
         "#NFL",
@@ -70,17 +66,12 @@
       "gameHours": 2.5,
       "accounts": [
         "NBA",
-        "NBAonTNT",
-        "NBAonESPN",
         "ESPNNBA",
         "NBATV",
         "NBAonPrime",
-        "NBCSportsNBA",
         "NBAHistory",
         "ShamsCharania",
-        "NBACentral",
         "BallIsLife",
-        "HoopCentral",
         "LegionHoops",
         "NBAonNBC"
       ],
@@ -125,18 +116,11 @@
       "gameHours": 2.75,
       "accounts": [
         "NHL",
-        "NHLonTNT",
-        "NHLonESPN",
-        "ESPNNHL",
-        "NHLNetwork",
-        "NHL_on_Sportsnet",
         "Sportsnet",
         "TSN_Sports",
-        "PR_NHL",
         "FriedgeHNIC",
         "DarrenDreger",
-        "PierreVLeBrun",
-        "NHLonPrime"
+        "PierreVLeBrun"
       ],
       "hashtags": [
         "#NHL",
@@ -174,13 +158,11 @@
         "MLB",
         "MLBNetwork",
         "MLBONFOX",
-        "ESPNMLB",
-        "MLBonTBS",
-        "Jeff_Passan",
         "Ken_Rosenthal",
         "MLBStats",
         "CodifyBaseball",
-        "TalkinBaseball_"
+        "TalkinBaseball_",
+        "JeffPassan"
       ],
       "hashtags": [
         "#MLB",
@@ -225,10 +207,8 @@
         "SkySportsNews",
         "FabrizioRomano",
         "brfootball",
-        "MatchOfTheDay",
         "OptaJoe",
-        "OptaAnalyst",
-        "TNTSportsFootball"
+        "OptaAnalyst"
       ],
       "hashtags": [
         "#PL",
@@ -271,11 +251,9 @@
       "gameHours": 2,
       "accounts": [
         "ChampionsLeague",
-        "UCLonParamount",
         "CBSSportsGolazo",
         "brfootball",
         "FabrizioRomano",
-        "TNTSportsFootball",
         "OptaJoe",
         "OptaAnalyst",
         "UEFA"
@@ -320,8 +298,6 @@
       "gameHours": 2,
       "accounts": [
         "MLS",
-        "MLSonAppleTV",
-        "MLSStats",
         "brfootball",
         "FOXSoccer",
         "TomBogert"
@@ -367,28 +343,19 @@
     "CBSSports",
     "NBCSports",
     "YahooSports",
-    "ESPNStatsInfo",
     "StatMuse",
     "SInow",
-    "TheRinger",
     "barstoolsports",
     "overtime",
-    "HouseofHighlights",
     "ClutchPoints",
-    "PopBase",
     "ringer",
-    "SportsCenterNext",
     "ESPNFC",
     "SkySports",
     "BBCSport",
     "talkSPORT",
     "Ballislife",
-    "br_betting",
-    "ESPN_FirstTake",
     "PatMcAfeeShow",
-    "TheVolumeSports",
-    "FDSportsbook",
-    "DKSportsbook"
+    "TheVolumeSports"
   ],
   "context": [
     "final",
