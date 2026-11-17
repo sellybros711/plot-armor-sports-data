@@ -8,7 +8,7 @@ The schedule for Plot Armor: Sports (a Chrome extension). Teams and start times 
 - `leagues.json` (hand-written): league and sports-news X accounts, sports words that back up
   a weak word, and team nicknames that are everyday words.
 - `team-extras.json` (hand-written): each team's official X handles, fan names and hashtags.
-  Written from memory on 2026-11-17: **check the handles before the first release.**
+  Every handle was checked on X on 2026-11-17.
 - `.github/workflows/build.yml`: GitHub Actions builds and publishes `sports.json` with GitHub
   Pages at 10:00 and 20:00 UTC. Free for a public repo.
 
